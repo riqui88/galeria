@@ -1,0 +1,25 @@
+DROP DATABASE if EXISTS galeria;
+CREATE DATABASE IF NOT EXISTS galeria;
+USE galeria;
+
+
+CREATE TABLE inventario(
+    id_inventario int primary key auto_increment,
+    precio decimal(6.2) not null,
+    almacen int NOT null,
+    descripcion  varchar(45),
+    img varchar(15) not null
+);
+
+INSERT INTO inventario( ) VALUES
+(20.00,10,"polera blanca de manga corta, hecha de algodon","1.jpg"),
+(20.00,15,"polera negra de manga corta, hecha de algodon","2.jpg"),
+(20.00,9,"polera azul de manga corta, hecha de algodon","3.jpg"),
+(20.00,10,"polera blanca de manga larga, hecha de algodon","4.jpg"),
+(20.00,20,"polera negra de manga larga, hecha de algodon","5.jpg"),
+(20.00,10,"polera azul de manga larga, hecha de algodon","6.jpg"),
+(50.00,15,"pantalon baqueros clasicos, de color negro estilo clasico","7.jpg"),
+(50.00,19,"pantalon baqueros clasicos, de color azul estilo clasico","8.jpg"),
+(50.00,14,"pantalon baqueros clasicos, de color plomo estilo clasico","9.jpg"),
+(60.00,10,"chaleco baqueros clasicos, de color negro estilo clasico","10.jpg");
+
